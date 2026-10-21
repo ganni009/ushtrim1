@@ -15,6 +15,7 @@
       <button type="submit" onclick="sum()">Mbledhje</button>
       <button type="submit" onclick="sub()">Zbritje</button>
       <button type="submit" onclick="mul()">Shumzim</button>
+      <button type="submit" onclick="div()">Pjestim</button>
       <p id="result"></p>
 
       <script>
@@ -40,6 +41,14 @@
           var b=Number(document.getElementById('nr2').value);
 
           var c=a*b;
+          document.getElementById('result').innerHTML=c;
+        }
+        function div()
+        {
+          var a=Number(document.getElementById('nr1').value);
+          var b=Number(document.getElementById('nr2').value);
+
+          var c=a/b;
           document.getElementById('result').innerHTML=c;
         }
       </script>
