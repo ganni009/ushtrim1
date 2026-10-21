@@ -12,7 +12,8 @@
       <label>Numri i dyte</label>
       <input type="number" id="nr2">
       <br>
-      <button type="submit" onclick="sum()"></button>
+      <button type="submit" onclick="sum()">Mbledhje</button>
+      <button type="submit" onclick="sub()">Zbrijte</button>
       <p id="result"></p>
 
       <script>
@@ -22,6 +23,14 @@
           var b=Number(document.getElementById('nr2').value);
 
           var c=a+b;
+          document.getElementById('result').innerHTML=c;
+        }
+        function sub()
+        {
+          var a=Number(document.getElementById('nr1').value);
+          var b=Number(document.getElementById('nr2').value);
+
+          var c=a-b;
           document.getElementById('result').innerHTML=c;
         }
       </script>
