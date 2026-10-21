@@ -27,11 +27,16 @@
       <button type="submit" onclick="zbritje()">Zbritje -</button>
       <script>
         var n=0;
-        function rritje()
-        {
-          n=n+1;
-          document.getElementById('numri').innerHTML=n;
+        function rritje() {
+            n = n + 1;
+            document.getElementById("numri").innerHTML = n;
         }
+
+        function zbritje() {
+            n = n - 1;
+            document.getElementById("numri").innerHTML = n;
+        }
+
         
         
         function sum()
